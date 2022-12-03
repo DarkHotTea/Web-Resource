@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elementary OS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icons/16x16.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <a class="header__logo" href="index.html">
+                    <img src="img/Elementary_logo.svg" alt="">
+                    <!-- <img src="img/Elementary_OS_logo.png" alt=""> -->
+                    <img src="img/icons/community-white.png" alt="">
+                </a>              
+                <div class="header__menu menu">
+                    <div class="menu__icon">
+                        <span></span>
+                    </div>
+                    <nav class="menu__body">
+                        <!-- Ссылки с data-атрибутами -->
+                        <ul class="menu__list">
+                            <li>
+                                <a data-goto=".main__history" id="link" class="menu__link" href="#history">
+                                    <span>
+                                        Web-история
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-goto=".cart" id="link" class="menu__link" href="#cartography">
+                                    <span>
+                                        ГИС и картография
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-goto=".main__service" id="link" class="menu__link" href="#service">
+                                    <span>
+                                        Сервисная инженерия
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-goto=".main__roles" id="link" class="menu__link" href="#roles">
+                                    <span>
+                                        Роли
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-goto=".main__aboutUs" id="link" class="menu__link" href="#US">
+                                    <span>
+                                        О нас
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- Ссылки с data-атрибутами -->
+                    </nav> 
+                </div>
+            </div>
+            <div class="header__descr">
+                <div class="header__descr__title element-animation">
+                    <picture>
+                        <source srcset="img/icons/logo_mark.svg" media="(max-width: 567px)"/>
+                        <img src="img/Elementary_OS_logo.png" alt="">
+                    </picture>
+                </div>
+                <div class="header__descr__text element-animation">Продуманная, способная и этичная замена Windows и macOS</div>
+                <a data-goto=".main__about" id="link" class="header__arrow" href="#Main">
+                    <svg class="header__arrow-svg" style="fill:#ffffff;" x="0px" y="0px" width="38.417px" height="18.592px" viewBox="0 0 38.417 18.592"><g><path d="M19.208,18.592c-0.241,0-0.483-0.087-0.673-0.261L0.327,1.74c-0.408-0.372-0.438-1.004-0.066-1.413c0.372-0.409,1.004-0.439,1.413-0.066L19.208,16.24L36.743,0.261c0.411-0.372,1.042-0.342,1.413,0.066c0.372,0.408,0.343,1.041-0.065,1.413L19.881,18.332C19.691,18.505,19.449,18.592,19.208,18.592z"></path></g></svg>
+                </a>
+            </div>
+        </header>
+        <main class="main" id="Main">
+            <div class="main__row">
+                <section class="main__about block">
+                    <div class="container">
+                        <div class="main__about__title title">
+                            Об операционной системе
+                        </div>
+                        <div class="main__about__text">
+                            <b>elementary OS</b> — современная операционная система, приятная глазу, удобная, интуитивно понятная, местами напоминающая macOS. Она полегче популярных Ubuntu и Mint, с минимальным набором установленных приложений. Дополнительныe можно устанавливать из тех же репозиториев, что Ubuntu и Mint.
+                        </div>
+                    </div>                    
+                </section>
+                <section id="history" class="main__history block">
+                    <div class="container">
+                        <div class="main__history__title title">
+                            Web-история
+                        </div>
+                        <div class="main__history__cards">
+                            <div class="history__card">
+                                <div class="history__card__thumb">
+                                    <a href="https://izi.travel/ru/browse/25a55dab-7df0-44c7-bcc2-d7cb5d853bf5/ru" class="history__card__thumb__link">
+                                        <img src="img/Microphone.jpg" alt="" class="history__card__thumb__img">
+                                    </a>
+                                </div>
+                                <div class="history__card__content">
+                                    <div class="history__card__title">
+                                        Аудиогид
+                                    </div>
+                                    <p class="history__card__text">
+                                        Аудиогид, рассказывающий о странах, в которых пользуется популярность и применяется в работе выбранная нашей командой ОС.
+                                    </p>
+                                    <div class="history__card__btn">
+                                        <a class="history__card__btn__link" href="https://izi.travel/ru/browse/25a55dab-7df0-44c7-bcc2-d7cb5d853bf5/ru"><span>Слушать ▶</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="history__card">
+                                <div class="history__card__thumb">
+                                    <a href="#" class="history__card__thumb__link">
+                                        <img src="img/present.jpg" alt="" class="history__card__thumb__img">
+                                    </a>
+                                </div>
+                                <div class="history__card__content">
+                                    <div class="history__card__title">
+                                        Презентация
+                                    </div>
+                                    <p class="history__card__text">
+                                        Мультимедийная презентация, посвященная стране (городу), в которой была разработана и реализована выбранная ОС. 
+                                    </p>
+                                    <div class="history__card__btn">
+                                        <a class="history__card__btn__link" href="#"><span>Скачать ▶</span></a>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>                    
+                </section>
+                <section id="cartography" class="main__history cart block">
+                    <div class="container">
+                        <div class="main__history__title title">
+                            ГИС и картография
+                        </div>
+                        <div class="main__history__cards">
+                            <div class="history__card">
+                                <div class="history__card__thumb">
+                                    <a href="https://www.timetoast.com/timelines/2867463" class="history__card__thumb__link">
+                                        <img src="img/time-line.webp" alt="" class="history__card__thumb__img">
+                                    </a>
+                                </div>
+                                <div class="history__card__content">
+                                    <div class="history__card__title">
+                                        Лента времени 
+                                    </div>
+                                    <p class="history__card__text">
+                                        Исторический анализ выбранной ОС, а именно годовые интервалы разработки, даты обновлений.
+                                    </p>
+                                    <div class="history__card__btn">
+                                        <a class="history__card__btn__link" href="https://www.timetoast.com/timelines/2867463"><span>Смотреть ▶</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="history__card">
+                                <div class="history__card__thumb">
+                                    <a href="https://www.flipsnack.com/7C9E6B66AED/elementary-os.html" class="history__card__thumb__link">
+                                        <img src="img/flipsnack.png" alt="" class="history__card__thumb__img">
+                                    </a>
+                                </div>
+                                <div class="history__card__content">
+                                    <div class="history__card__title">
+                                        Web - альбом 
+                                    </div>
+                                    <p class="history__card__text">
+                                        Альбом, посвященный функциям, характеристикам, преимуществам и недостатками выбранной ОС.
+                                    </p>
+                                    <div class="history__card__btn">
+                                        <a class="history__card__btn__link" href="https://www.flipsnack.com/7C9E6B66AED/elementary-os.html"><span>Смотреть ▶</span></a>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>                    
+                </section>
+                <section id="service" class="main__service block">
+                    <div class="container">
+                        <div class="main__service__title title">
+                            Сервисная инженерия
+                        </div>
+                        <div class="main__service__card">
+                            <div class="service__card__text">
+                                Видеокурс по процессу установки (рекламы), выбранной нами ОС на ПК, используя возможности предложенного сервиса.
+                            </div>
+                            <div class="service__card__video">
+                                <video controls muted preload="metadata" src="img/video/animation.mp4"></video>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="roles" class="main__roles block">
+                    <div class="container">
+                        <div class="main__roles__title title">
+                            Роли
+                        </div>
+                        <div class="main__roles__list">                            
+                            <ul>
+                                <li>
+                                    <img src="img/icons/historian.png" alt="">
+                                    <div class="main__roles__list__content">
+                                        <div class="main__roles__list__title">
+                                            <b>Web – историк</b>
+                                        </div>
+                                        <div class="main__roles__list__text">
+                                            <p>Специалист по анализу исторических хроник и событий в сфере IT. Главной задачей историка является изучение хронологических событий прошлого.</p>
+                                        </div>
+                                    </div>                                    
+                                </li>
+                                <li>
+                                    <img src="img/icons/cartograph.png" alt="">
+                                    <div class="main__roles__list__content">
+                                        <div class="main__roles__list__title">
+                                            <b>ГИС - специалист, картограф</b>
+                                        </div>
+                                        <div class="main__roles__list__text">
+                                            <p>Специалист по составлению бумажных и электронных карт. Главной задачей картографа является составление карт и гидов, по достопримечательностям.</p>
+                                        </div>
+                                    </div>                                              
+                                </li>
+                                <li>
+                                    <img src="img/icons/service.png" alt="">
+                                    <div class="main__roles__list__content">
+                                        <div class="main__roles__list__title">
+                                            <b>Сервисный инженер</b>
+                                        </div>
+                                        <div class="main__roles__list__text">
+                                            <p>Cпециалист по обслуживанию и настройке программного и системного обеспечения. Главной задачей сервисного инженера является процесс установки, настройки и отладки работы ПО: системного и прикладного.</p>
+                                        </div>
+                                    </div>                                              
+                                </li>
+                                <li>
+                                    <img src="img/icons/speaker.png" alt="">
+                                    <div class="main__roles__list__content">
+                                        <div class="main__roles__list__title">
+                                            <b>Оратор</b>
+                                        </div>
+                                        <div class="main__roles__list__text">
+                                            <p>Данному участнику предстоит подготовить выступление и провести
+                                            демонстрацию результатов прохождения Web – квеста.</p>
+                                        </div>
+                                    </div>                                              
+                                </li>
+                                <li>
+                                    <img src="img/icons/pc.png" alt="">
+                                    <div class="main__roles__list__content">
+                                        <div class="main__roles__list__title">
+                                            <b>IT - администратор</b>
+                                        </div>
+                                        <div class="main__roles__list__text">
+                                            <p>Cпециалист по обеспечению штатной работы парка компьютерной техники, сети и программного обеспечения.</p>
+                                        </div>
+                                    </div>                                          
+                                </li>
+                            </ul>
+                        </div>    
+                    </div>
+                </section>
+                <section id="US" class="main__aboutUs block">
+                    <div class="container">
+                        <div class="main__aboutUs__title title">
+                            О нас
+                        </div>
+                        <div class="main__aboutUs__slider">
+                            <div class="slider__item">
+                                <div class="slider__item__img">
+                                    <img src="img/Dan.jpg" alt="">                                    
+                                </div>                                
+                                <div class="slider__item__text">
+                                    <div class="slider__item__text__who">
+                                        Даниил Пролыгин
+                                    </div>
+                                    <div class="slider__item__text__about">
+                                        <ul>
+                                            <li><span id="num1">Оратор</span></li>
+                                            <li><span id="num2">Web - историк</span></li>
+                                        </ul>
+                                    </div>
+                                </div>                        
+                            </div>
+                            <div class="slider__item">
+                                <div class="slider__item__img">
+                                    <img src="img/Kris3.jpg" alt="">                                
+                                </div>                                
+                                <div class="slider__item__text">
+                                    <div class="slider__item__text__who">
+                                        Кристина Тарасова
+                                    </div>
+                                    <div class="slider__item__text__about">
+                                        <ul>
+                                            <li><span id="num3">ГИС - специалист, картограф</span></li>
+                                        </ul>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <div class="slider__item">
+                                <div class="slider__item__img">
+                                    <img src="img/Ulya1.jpg" alt="">                                
+                                </div>                                
+                                <div class="slider__item__text">
+                                    <div class="slider__item__text__who">
+                                        Ульяна Кузнецова
+                                    </div>
+                                    <div class="slider__item__text__about">
+                                        <ul>
+                                            <li><span id="num3">ГИС - специалист, картограф</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__item">
+                                <div class="slider__item__img">
+                                    <img src="img/Eliza2.jpg" alt="">                                
+                                </div>                                
+                                <div class="slider__item__text">
+                                    <div class="slider__item__text__who">
+                                        Елизавета Сильянова
+                                    </div>
+                                    <div class="slider__item__text__about">
+                                        <ul>
+                                            <li><span id="num4">Сервисный инженер</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__item">
+                                <div class="slider__item__img">
+                                    <img src="img/me.jpg" alt="">                                
+                                </div>                                
+                                <div class="slider__item__text">
+                                    <div class="slider__item__text__who">
+                                        Калюжный Даниил
+                                    </div>
+                                    <div class="slider__item__text__about">
+                                        <ul>
+                                            <li><span id="num5">IT - администратор</span></li>
+                                        </ul>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="main__aboutUs__arrows">
+                            
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__text">
+                        Команда ОС elementary OS
+                    </div>
+                    <div class="footer__text">
+                        г. Донской 2022, ДКИТ
+                    </div>
+                    <!-- <a href="" class="footer_back_to_top"></a> -->
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/script.js"></script>        
+    </div>
+</body>
+</html>
